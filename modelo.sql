@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-08-2022 a las 16:10:43
+-- Tiempo de generación: 13-08-2022 a las 17:21:39
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -3308,7 +3308,7 @@ INSERT INTO `county` (`id`, `codeCounty`, `county`, `population`, `area`) VALUES
 
 CREATE TABLE `election` (
   `idElection` int(11) NOT NULL,
-  `year` int(4) DEFAULT NULL,
+  `years` int(4) DEFAULT NULL,
   `voteCount` int(10) DEFAULT NULL,
   `politicalParty` varchar(10) DEFAULT NULL,
   `codeCounty` int(11) DEFAULT NULL
@@ -3318,7 +3318,7 @@ CREATE TABLE `election` (
 -- Volcado de datos para la tabla `election`
 --
 
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (1, 2000, 13997, 'DEMOCRAT', 1003),
 (2, 2000, 5188, 'DEMOCRAT', 1005),
 (3, 2000, 2710, 'DEMOCRAT', 1007),
@@ -4698,7 +4698,7 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (1377, 2000, 1726, 'DEMOCRAT', 28015),
 (1378, 2000, 3519, 'DEMOCRAT', 28017),
 (1379, 2000, 1278, 'DEMOCRAT', 28019);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (1380, 2000, 3670, 'DEMOCRAT', 28021),
 (1381, 2000, 2368, 'DEMOCRAT', 28023),
 (1382, 2000, 4515, 'DEMOCRAT', 28025),
@@ -6046,7 +6046,7 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (2724, 2000, 5056, 'DEMOCRAT', 48465),
 (2725, 2000, 5245, 'DEMOCRAT', 48467),
 (2726, 2000, 8176, 'DEMOCRAT', 48469);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (2727, 2000, 4943, 'DEMOCRAT', 48471),
 (2728, 2000, 5046, 'DEMOCRAT', 48473),
 (2729, 2000, 1256, 'DEMOCRAT', 48475),
@@ -7397,7 +7397,7 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (4074, 2004, 34923, 'DEMOCRAT', 20209),
 (4075, 2004, 1764, 'DEMOCRAT', 21001),
 (4076, 2004, 1923, 'DEMOCRAT', 21003);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (4077, 2004, 3141, 'DEMOCRAT', 21005),
 (4078, 2004, 1759, 'DEMOCRAT', 21007),
 (4079, 2004, 5216, 'DEMOCRAT', 21009),
@@ -8738,7 +8738,7 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (5414, 2004, 4832, 'DEMOCRAT', 45033),
 (5415, 2004, 14733, 'DEMOCRAT', 45035),
 (5416, 2004, 4051, 'DEMOCRAT', 45037);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (5417, 2004, 5764, 'DEMOCRAT', 45039),
 (5418, 2004, 21442, 'DEMOCRAT', 45041),
 (5419, 2004, 10602, 'DEMOCRAT', 45043),
@@ -10088,9 +10088,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (6763, 2008, 1211, 'DEMOCRAT', 16035),
 (6764, 2008, 611, 'DEMOCRAT', 16037),
 (6765, 2008, 2591, 'DEMOCRAT', 16039),
-(6766, 2008, 600, 'DEMOCRAT', 16041),
-(6767, 2008, 1065, 'DEMOCRAT', 16043);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(6766, 2008, 600, 'DEMOCRAT', 16041);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(6767, 2008, 1065, 'DEMOCRAT', 16043),
 (6768, 2008, 2166, 'DEMOCRAT', 16045),
 (6769, 2008, 1489, 'DEMOCRAT', 16047),
 (6770, 2008, 2017, 'DEMOCRAT', 16049),
@@ -11431,9 +11431,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (8105, 2008, 3688, 'DEMOCRAT', 37041),
 (8106, 2008, 1734, 'DEMOCRAT', 37043),
 (8107, 2008, 17363, 'DEMOCRAT', 37045),
-(8108, 2008, 11076, 'DEMOCRAT', 37047),
-(8109, 2008, 19352, 'DEMOCRAT', 37049);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(8108, 2008, 11076, 'DEMOCRAT', 37047);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(8109, 2008, 19352, 'DEMOCRAT', 37049),
 (8110, 2008, 74693, 'DEMOCRAT', 37051),
 (8111, 2008, 3737, 'DEMOCRAT', 37053),
 (8112, 2008, 8074, 'DEMOCRAT', 37055),
@@ -12777,9 +12777,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (9450, 2012, 1471, 'DEMOCRAT', 5061),
 (9451, 2012, 3281, 'DEMOCRAT', 5063),
 (9452, 2012, 1524, 'DEMOCRAT', 5065),
-(9453, 2012, 2095, 'DEMOCRAT', 5067),
-(9454, 2012, 17470, 'DEMOCRAT', 5069);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(9453, 2012, 2095, 'DEMOCRAT', 5067);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(9454, 2012, 17470, 'DEMOCRAT', 5069),
 (9455, 2012, 2799, 'DEMOCRAT', 5071),
 (9456, 2012, 1173, 'DEMOCRAT', 5073),
 (9457, 2012, 1788, 'DEMOCRAT', 5075),
@@ -14102,9 +14102,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (10774, 2012, 2003, 'DEMOCRAT', 28131),
 (10775, 2012, 8199, 'DEMOCRAT', 28133),
 (10776, 2012, 3959, 'DEMOCRAT', 28135),
-(10777, 2012, 4933, 'DEMOCRAT', 28137),
-(10778, 2012, 2317, 'DEMOCRAT', 28139);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(10777, 2012, 4933, 'DEMOCRAT', 28137);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(10778, 2012, 2317, 'DEMOCRAT', 28139),
 (10779, 2012, 1643, 'DEMOCRAT', 28141),
 (10780, 2012, 3475, 'DEMOCRAT', 28143),
 (10781, 2012, 2742, 'DEMOCRAT', 28145),
@@ -15414,9 +15414,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (12085, 2012, 346, 'DEMOCRAT', 49001),
 (12086, 2012, 1984, 'DEMOCRAT', 49003),
 (12087, 2012, 6244, 'DEMOCRAT', 49005),
-(12088, 2012, 2275, 'DEMOCRAT', 49007),
-(12089, 2012, 94, 'DEMOCRAT', 49009);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(12088, 2012, 2275, 'DEMOCRAT', 49007);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(12089, 2012, 94, 'DEMOCRAT', 49009),
 (12090, 2012, 21889, 'DEMOCRAT', 49011),
 (12091, 2012, 581, 'DEMOCRAT', 49013),
 (12092, 2012, 569, 'DEMOCRAT', 49015),
@@ -16730,9 +16730,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (13400, 2016, 297, 'DEMOCRAT', 20183),
 (13401, 2016, 304, 'DEMOCRAT', 20185),
 (13402, 2016, 115, 'DEMOCRAT', 20187),
-(13403, 2016, 220, 'DEMOCRAT', 20189),
-(13404, 2016, 2076, 'DEMOCRAT', 20191);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(13403, 2016, 220, 'DEMOCRAT', 20189);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(13404, 2016, 2076, 'DEMOCRAT', 20191),
 (13405, 2016, 473, 'DEMOCRAT', 20193),
 (13406, 2016, 198, 'DEMOCRAT', 20195),
 (13407, 2016, 776, 'DEMOCRAT', 20197),
@@ -18041,9 +18041,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (14710, 2016, 256082, 'DEMOCRAT', 42091),
 (14711, 2016, 2857, 'DEMOCRAT', 42093),
 (14712, 2016, 66272, 'DEMOCRAT', 42095),
-(14713, 2016, 9788, 'DEMOCRAT', 42097),
-(14714, 2016, 4632, 'DEMOCRAT', 42099);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(14713, 2016, 9788, 'DEMOCRAT', 42097);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(14714, 2016, 4632, 'DEMOCRAT', 42099),
 (14715, 2016, 584025, 'DEMOCRAT', 42101),
 (14716, 2016, 9256, 'DEMOCRAT', 42103),
 (14717, 2016, 1302, 'DEMOCRAT', 42105),
@@ -19358,9 +19358,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (16026, 2000, 11127, 'REPUBLIC', 13217),
 (16027, 2000, 7611, 'REPUBLIC', 13219),
 (16028, 2000, 2706, 'REPUBLIC', 13221),
-(16029, 2000, 16881, 'REPUBLIC', 13223),
-(16030, 2000, 3525, 'REPUBLIC', 13225);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(16029, 2000, 16881, 'REPUBLIC', 13223);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(16030, 2000, 3525, 'REPUBLIC', 13225),
 (16031, 2000, 5488, 'REPUBLIC', 13227),
 (16032, 2000, 3348, 'REPUBLIC', 13229),
 (16033, 2000, 3358, 'REPUBLIC', 13231),
@@ -20664,9 +20664,9 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (17331, 2000, 2600, 'REPUBLIC', 35007),
 (17332, 2000, 8301, 'REPUBLIC', 35009),
 (17333, 2000, 612, 'REPUBLIC', 35011),
-(17334, 2000, 21263, 'REPUBLIC', 35013),
-(17335, 2000, 10335, 'REPUBLIC', 35015);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(17334, 2000, 21263, 'REPUBLIC', 35013);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(17335, 2000, 10335, 'REPUBLIC', 35015),
 (17336, 2000, 4961, 'REPUBLIC', 35017),
 (17337, 2000, 548, 'REPUBLIC', 35019),
 (17338, 2000, 366, 'REPUBLIC', 35021),
@@ -21967,10 +21967,10 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (18633, 2000, 27467, 'REPUBLIC', 55105),
 (18634, 2000, 3758, 'REPUBLIC', 55107),
 (18635, 2000, 11586, 'REPUBLIC', 55111),
-(18636, 2000, 3972, 'REPUBLIC', 55113),
+(18636, 2000, 3972, 'REPUBLIC', 55113);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (18637, 2000, 9548, 'REPUBLIC', 55115),
-(18638, 2000, 29648, 'REPUBLIC', 55117);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(18638, 2000, 29648, 'REPUBLIC', 55117),
 (18639, 2000, 15240, 'REPUBLIC', 55109),
 (18640, 2000, 5278, 'REPUBLIC', 55119),
 (18641, 2000, 5002, 'REPUBLIC', 55121),
@@ -23275,10 +23275,10 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (19940, 2004, 5454, 'REPUBLIC', 26129),
 (19941, 2004, 2262, 'REPUBLIC', 26131),
 (19942, 2004, 6599, 'REPUBLIC', 26133),
-(19943, 2004, 2570, 'REPUBLIC', 26135),
+(19943, 2004, 2570, 'REPUBLIC', 26135);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (19944, 2004, 7470, 'REPUBLIC', 26137),
-(19945, 2004, 92048, 'REPUBLIC', 26139);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(19945, 2004, 92048, 'REPUBLIC', 26139),
 (19946, 2004, 3982, 'REPUBLIC', 26141),
 (19947, 2004, 7364, 'REPUBLIC', 26143),
 (19948, 2004, 47165, 'REPUBLIC', 26145),
@@ -24577,10 +24577,10 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (21241, 2004, 7893, 'REPUBLIC', 48147),
 (21242, 2004, 7527, 'REPUBLIC', 48149),
 (21243, 2004, 1161, 'REPUBLIC', 48151),
-(21244, 2004, 2032, 'REPUBLIC', 48153),
+(21244, 2004, 2032, 'REPUBLIC', 48153);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (21245, 2004, 347, 'REPUBLIC', 48155),
-(21246, 2004, 93625, 'REPUBLIC', 48157);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(21246, 2004, 93625, 'REPUBLIC', 48157),
 (21247, 2004, 3185, 'REPUBLIC', 48159),
 (21248, 2004, 5057, 'REPUBLIC', 48161),
 (21249, 2004, 1991, 'REPUBLIC', 48163),
@@ -25886,10 +25886,10 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (22549, 2008, 2965, 'REPUBLIC', 19005),
 (22550, 2008, 3086, 'REPUBLIC', 19007),
 (22551, 2008, 1634, 'REPUBLIC', 19009),
-(22552, 2008, 6447, 'REPUBLIC', 19011),
+(22552, 2008, 6447, 'REPUBLIC', 19011);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (22553, 2008, 24662, 'REPUBLIC', 19013),
-(22554, 2008, 6293, 'REPUBLIC', 19015);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(22554, 2008, 6293, 'REPUBLIC', 19015),
 (22555, 2008, 5741, 'REPUBLIC', 19017),
 (22556, 2008, 4139, 'REPUBLIC', 19019),
 (22557, 2008, 4223, 'REPUBLIC', 19021),
@@ -27189,10 +27189,10 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (23851, 2008, 15454, 'REPUBLIC', 39101),
 (23852, 2008, 48189, 'REPUBLIC', 39103),
 (23853, 2008, 6015, 'REPUBLIC', 39105),
-(23854, 2008, 15100, 'REPUBLIC', 39107),
+(23854, 2008, 15100, 'REPUBLIC', 39107);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (23855, 2008, 33417, 'REPUBLIC', 39109),
-(23856, 2008, 3066, 'REPUBLIC', 39111);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(23856, 2008, 3066, 'REPUBLIC', 39111),
 (23857, 2008, 128679, 'REPUBLIC', 39113),
 (23858, 2008, 3440, 'REPUBLIC', 39115),
 (23859, 2008, 10067, 'REPUBLIC', 39117),
@@ -28497,11 +28497,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (25158, 2012, 7401, 'REPUBLIC', 8083),
 (25159, 2012, 13552, 'REPUBLIC', 8085),
 (25160, 2012, 6602, 'REPUBLIC', 8087),
-(25161, 2012, 4382, 'REPUBLIC', 8089),
+(25161, 2012, 4382, 'REPUBLIC', 8089);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (25162, 2012, 1481, 'REPUBLIC', 8091),
 (25163, 2012, 5236, 'REPUBLIC', 8093),
-(25164, 2012, 1637, 'REPUBLIC', 8095);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(25164, 2012, 1637, 'REPUBLIC', 8095),
 (25165, 2012, 3024, 'REPUBLIC', 8097),
 (25166, 2012, 3230, 'REPUBLIC', 8099),
 (25167, 2012, 31894, 'REPUBLIC', 8101),
@@ -29800,11 +29800,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (26460, 2012, 15746, 'REPUBLIC', 29213),
 (26461, 2012, 7618, 'REPUBLIC', 29215),
 (26462, 2012, 5758, 'REPUBLIC', 29217),
-(26463, 2012, 9150, 'REPUBLIC', 29219),
+(26463, 2012, 9150, 'REPUBLIC', 29219);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (26464, 2012, 5071, 'REPUBLIC', 29221),
 (26465, 2012, 3790, 'REPUBLIC', 29223),
-(26466, 2012, 10708, 'REPUBLIC', 29225);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(26466, 2012, 10708, 'REPUBLIC', 29225),
 (26467, 2012, 664, 'REPUBLIC', 29227),
 (26468, 2012, 5830, 'REPUBLIC', 29229),
 (26469, 2012, 3289, 'REPUBLIC', 30001),
@@ -31103,11 +31103,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (27762, 2012, 75292, 'REPUBLIC', 51107),
 (27763, 2012, 9215, 'REPUBLIC', 51109),
 (27764, 2012, 2969, 'REPUBLIC', 51111),
-(27765, 2012, 19806, 'REPUBLIC', 51680),
+(27765, 2012, 19806, 'REPUBLIC', 51680);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (27766, 2012, 3869, 'REPUBLIC', 51113),
 (27767, 2012, 6463, 'REPUBLIC', 51683),
-(27768, 2012, 1699, 'REPUBLIC', 51685);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(27768, 2012, 1699, 'REPUBLIC', 51685),
 (27769, 2012, 2312, 'REPUBLIC', 51690),
 (27770, 2012, 3488, 'REPUBLIC', 51115),
 (27771, 2012, 7973, 'REPUBLIC', 51117),
@@ -32411,11 +32411,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (29069, 2016, 20469, 'REPUBLIC', 21185),
 (29070, 2016, 3745, 'REPUBLIC', 21187),
 (29071, 2016, 1474, 'REPUBLIC', 21189),
-(29072, 2016, 4604, 'REPUBLIC', 21191),
+(29072, 2016, 4604, 'REPUBLIC', 21191);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (29073, 2016, 8158, 'REPUBLIC', 21193),
 (29074, 2016, 19747, 'REPUBLIC', 21195),
-(29075, 2016, 3513, 'REPUBLIC', 21197);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(29075, 2016, 3513, 'REPUBLIC', 21197),
 (29076, 2016, 22902, 'REPUBLIC', 21199),
 (29077, 2016, 759, 'REPUBLIC', 21201),
 (29078, 2016, 5609, 'REPUBLIC', 21203),
@@ -33710,11 +33710,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (30367, 2016, 1433, 'REPUBLIC', 46045),
 (30368, 2016, 2511, 'REPUBLIC', 46047),
 (30369, 2016, 858, 'REPUBLIC', 46049),
-(30370, 2016, 2382, 'REPUBLIC', 46051),
+(30370, 2016, 2382, 'REPUBLIC', 46051);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (30371, 2016, 1600, 'REPUBLIC', 46053),
 (30372, 2016, 936, 'REPUBLIC', 46055),
-(30373, 2016, 2051, 'REPUBLIC', 46057);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(30373, 2016, 2051, 'REPUBLIC', 46057),
 (30374, 2016, 1391, 'REPUBLIC', 46059),
 (30375, 2016, 1497, 'REPUBLIC', 46061),
 (30376, 2016, 695, 'REPUBLIC', 46063),
@@ -35091,11 +35091,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (31747, 2000, 355, 'OTHER', 17121),
 (31748, 2000, 192, 'OTHER', 17123),
 (31749, 2000, 169, 'OTHER', 17125),
-(31750, 2000, 156, 'OTHER', 17127),
+(31750, 2000, 156, 'OTHER', 17127);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (31751, 2000, 467, 'OTHER', 17109),
 (31752, 2000, 3375, 'OTHER', 17111),
-(31753, 2000, 1954, 'OTHER', 17113);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(31753, 2000, 1954, 'OTHER', 17113),
 (31754, 2000, 176, 'OTHER', 17129),
 (31755, 2000, 230, 'OTHER', 17131),
 (31756, 2000, 367, 'OTHER', 17133),
@@ -36559,11 +36559,11 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (33214, 2000, 8359, 'OTHER', 39153),
 (33215, 2000, 3942, 'OTHER', 39155),
 (33216, 2000, 1690, 'OTHER', 39157),
-(33217, 2000, 482, 'OTHER', 39159),
+(33217, 2000, 482, 'OTHER', 39159);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (33218, 2000, 331, 'OTHER', 39161),
 (33219, 2000, 189, 'OTHER', 39163),
-(33220, 2000, 1618, 'OTHER', 39165);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(33220, 2000, 1618, 'OTHER', 39165),
 (33221, 2000, 790, 'OTHER', 39167),
 (33222, 2000, 1756, 'OTHER', 39169),
 (33223, 2000, 524, 'OTHER', 39171),
@@ -38044,12 +38044,12 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (34698, 2004, 11, 'OTHER', 13209),
 (34699, 2004, 36, 'OTHER', 13211),
 (34700, 2004, 45, 'OTHER', 13213),
-(34701, 2004, 231, 'OTHER', 13215),
+(34701, 2004, 231, 'OTHER', 13215);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (34702, 2004, 132, 'OTHER', 13217),
 (34703, 2004, 105, 'OTHER', 13219),
 (34704, 2004, 41, 'OTHER', 13221),
-(34705, 2004, 204, 'OTHER', 13223);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(34705, 2004, 204, 'OTHER', 13223),
 (34706, 2004, 30, 'OTHER', 13225),
 (34707, 2004, 68, 'OTHER', 13227),
 (34708, 2004, 9, 'OTHER', 13229),
@@ -39532,12 +39532,12 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (36185, 2004, 105, 'OTHER', 37175),
 (36186, 2004, 4, 'OTHER', 37177),
 (36187, 2004, 207, 'OTHER', 37179),
-(36188, 2004, 31, 'OTHER', 37181),
+(36188, 2004, 31, 'OTHER', 37181);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (36189, 2004, 1611, 'OTHER', 37183),
 (36190, 2004, 16, 'OTHER', 37185),
 (36191, 2004, 18, 'OTHER', 37187),
-(36192, 2004, 159, 'OTHER', 37189);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(36192, 2004, 159, 'OTHER', 37189),
 (36193, 2004, 87, 'OTHER', 37191),
 (36194, 2004, 95, 'OTHER', 37193),
 (36195, 2004, 65, 'OTHER', 37195),
@@ -41030,12 +41030,12 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (37682, 2008, 1555, 'OTHER', 12083),
 (37683, 2008, 643, 'OTHER', 12085),
 (37684, 2008, 3104, 'OTHER', 12086),
-(37685, 2008, 432, 'OTHER', 12087),
+(37685, 2008, 432, 'OTHER', 12087);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (37686, 2008, 283, 'OTHER', 12089),
 (37687, 2008, 868, 'OTHER', 12091),
 (37688, 2008, 117, 'OTHER', 12093),
-(37689, 2008, 2870, 'OTHER', 12095);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(37689, 2008, 2870, 'OTHER', 12095),
 (37690, 2008, 622, 'OTHER', 12097),
 (37691, 2008, 3192, 'OTHER', 12099),
 (37692, 2008, 2345, 'OTHER', 12101),
@@ -42509,12 +42509,12 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (39160, 2008, 361, 'OTHER', 36023),
 (39161, 2008, 403, 'OTHER', 36025),
 (39162, 2008, 1566, 'OTHER', 36027),
-(39163, 2008, 6871, 'OTHER', 36029),
+(39163, 2008, 6871, 'OTHER', 36029);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (39164, 2008, 288, 'OTHER', 36031),
 (39165, 2008, 249, 'OTHER', 36033),
 (39166, 2008, 401, 'OTHER', 36035),
-(39167, 2008, 399, 'OTHER', 36037);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(39167, 2008, 399, 'OTHER', 36037),
 (39168, 2008, 406, 'OTHER', 36039),
 (39169, 2008, 45, 'OTHER', 36041),
 (39170, 2008, 471, 'OTHER', 36043),
@@ -43996,12 +43996,12 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (40646, 2012, 163, 'OTHER', 6051),
 (40647, 2012, 3208, 'OTHER', 6053),
 (40648, 2012, 1572, 'OTHER', 6055),
-(40649, 2012, 2027, 'OTHER', 6057),
+(40649, 2012, 2027, 'OTHER', 6057);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (40650, 2012, 27892, 'OTHER', 6059),
 (40651, 2012, 4583, 'OTHER', 6061),
 (40652, 2012, 300, 'OTHER', 6063),
-(40653, 2012, 14717, 'OTHER', 6065);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(40653, 2012, 14717, 'OTHER', 6065),
 (40654, 2012, 13792, 'OTHER', 6067),
 (40655, 2012, 425, 'OTHER', 6069),
 (40656, 2012, 14050, 'OTHER', 6071),
@@ -45475,13 +45475,13 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (42124, 2012, 14, 'OTHER', 31073),
 (42125, 2012, 11, 'OTHER', 31075),
 (42126, 2012, 25, 'OTHER', 31077),
-(42127, 2012, 422, 'OTHER', 31079),
+(42127, 2012, 422, 'OTHER', 31079);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (42128, 2012, 125, 'OTHER', 31081),
 (42129, 2012, 29, 'OTHER', 31083),
 (42130, 2012, 12, 'OTHER', 31085),
 (42131, 2012, 43, 'OTHER', 31087),
-(42132, 2012, 135, 'OTHER', 31089);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(42132, 2012, 135, 'OTHER', 31089),
 (42133, 2012, 6, 'OTHER', 31091),
 (42134, 2012, 66, 'OTHER', 31093),
 (42135, 2012, 85, 'OTHER', 31095),
@@ -46954,13 +46954,13 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (43602, 2016, 1183, 'OTHER', 1051),
 (43603, 2016, 305, 'OTHER', 1053),
 (43604, 2016, 1369, 'OTHER', 1055),
-(43605, 2016, 175, 'OTHER', 1057),
+(43605, 2016, 175, 'OTHER', 1057);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (43606, 2016, 377, 'OTHER', 1059),
 (43607, 2016, 239, 'OTHER', 1061),
 (43608, 2016, 29, 'OTHER', 1063),
 (43609, 2016, 92, 'OTHER', 1065),
-(43610, 2016, 148, 'OTHER', 1067);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(43610, 2016, 148, 'OTHER', 1067),
 (43611, 2016, 1247, 'OTHER', 1069),
 (43612, 2016, 639, 'OTHER', 1071),
 (43613, 2016, 12550, 'OTHER', 1073),
@@ -48418,13 +48418,13 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (45065, 2016, 2342, 'OTHER', 29071),
 (45066, 2016, 255, 'OTHER', 29073),
 (45067, 2016, 134, 'OTHER', 29075),
-(45068, 2016, 8468, 'OTHER', 29077),
+(45068, 2016, 8468, 'OTHER', 29077);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (45069, 2016, 68, 'OTHER', 29079),
 (45070, 2016, 150, 'OTHER', 29081),
 (45071, 2016, 434, 'OTHER', 29083),
 (45072, 2016, 166, 'OTHER', 29085),
-(45073, 2016, 82, 'OTHER', 29087);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(45073, 2016, 82, 'OTHER', 29087),
 (45074, 2016, 308, 'OTHER', 29089),
 (45075, 2016, 681, 'OTHER', 29091),
 (45076, 2016, 163, 'OTHER', 29093),
@@ -49876,13 +49876,13 @@ INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `co
 (46522, 2016, 2403, 'OTHER', 53045),
 (46523, 2016, 1183, 'OTHER', 53047),
 (46524, 2016, 736, 'OTHER', 53049),
-(46525, 2016, 495, 'OTHER', 53051),
+(46525, 2016, 495, 'OTHER', 53051);
+INSERT INTO `election` (`idElection`, `years`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
 (46526, 2016, 29123, 'OTHER', 53053),
 (46527, 2016, 914, 'OTHER', 53055),
 (46528, 2016, 4542, 'OTHER', 53057),
 (46529, 2016, 479, 'OTHER', 53059),
-(46530, 2016, 28691, 'OTHER', 53061);
-INSERT INTO `election` (`idElection`, `year`, `voteCount`, `politicalParty`, `codeCounty`) VALUES
+(46530, 2016, 28691, 'OTHER', 53061),
 (46531, 2016, 20044, 'OTHER', 53063),
 (46532, 2016, 1749, 'OTHER', 53065),
 (46533, 2016, 11988, 'OTHER', 53067),
