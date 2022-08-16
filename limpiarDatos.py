@@ -17,7 +17,7 @@ df_Clean=df.set_index('codestate')
 df_Clean.to_excel("DataClean.xlsx")
 
 #creamos un archivo csv para insertar datos en la BD
-df_Clean.to_csv('counties.csv', encoding='utf-8')
+df_Clean.to_csv('counties.csv', encoding='utf-8', index=False)
  
 
 print("Dataset Clean")
